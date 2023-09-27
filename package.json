@@ -1,5 +1,5 @@
 {
-  "name": "development-template",
+  "name": "langchain-on-lambda",
   "version": "0.1.1",
   "bin": "bin/development-template.js",
   "scripts": {
@@ -7,12 +7,11 @@
     "watch": "tsc -w",
     "test": "jest",
     "cdk": "cdk",
-    "cdk:deploy": "yarn cdk deploy"
+    "cdk:deploy": "pnpm cdk deploy"
   },
   "devDependencies": {
     "@types/jest": "^29.5.0",
     "@types/node": "^18.15.11",
-    "@types/prettier": "^2.7.2",
     "@typescript-eslint/eslint-plugin": "^5.57.0",
     "@typescript-eslint/parser": "^5.57.0",
     "aws-cdk": "2.72.0",
@@ -25,11 +24,11 @@
   },
   "dependencies": {
     "aws-cdk-lib": "2.72.0",
-    "constructs": "^10.1.295",
-    "dotenv": "^16.0.3",
+    "constructs": "^10.2.70",
+    "dotenv": "^16.3.1",
     "source-map-support": "^0.5.21"
   },
-  "packageManager": "yarn@3.2.1",
+  "packageManager": "pnpm@8.6.7",
   "workspaces": [
     "functions/*"
   ]
